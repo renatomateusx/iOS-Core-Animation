@@ -8,11 +8,29 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  //MARK: Properties
+  
+  
+  //MARK: LifeCycle
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    
+    configureTabBar()
+    configureView()
   }
+  
+  //MARK: Helpers
+  func configureTabBar(){
+    navigationController?.navigationBar.isHidden = true
+           navigationController?.navigationBar.barStyle = .black
+  }
+  
+  func configureView(){
+    view.backgroundColor = .clear
+  }
+  
+  //MARK: Selectors
 
 
 }
